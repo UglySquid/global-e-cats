@@ -1,0 +1,11 @@
+.meow {
+    background-color: #242421;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 20px;
+    touch-action: none;
+    padding: 20px;
+}
