@@ -7,13 +7,17 @@ import Sidebar from './components/Sidebar';
 import PageOne from './pages/PageOne';
 import PageTwo from './pages/PageTwo';
 import PageThree from './pages/PageThree';
+import Checklisting from './pages/Checklisting'
+import Questions from './pages/Questions.tsx'
+import Glossary from './pages/Glossary.tsx'
 import { Stack } from '@mui/joy';
+import Videos from './pages/Videos.tsx'
 
 // Lazy-loaded components
-const Checklisting = React.lazy(() => import('./pages/Checklisting'));
-const Questions = React.lazy(() => import('./pages/Questions.tsx'));
-const Glossary = React.lazy(() => import('./pages/Glossary.tsx'));
-const Videos = React.lazy(() => import('./pages/Videos.tsx'));
+// const Checklisting = React.lazy(() => import('./pages/Checklisting'));
+// const Questions = React.lazy(() => import('./pages/Questions.tsx'));
+// const Glossary = React.lazy(() => import('./pages/Glossary.tsx'));
+// const Videos = React.lazy(() => import('./pages/Videos.tsx'));
 
 const App: React.FC = () => (
   <CssVarsProvider disableTransitionOnChange>
@@ -32,7 +36,7 @@ const App: React.FC = () => (
           overflow: 'auto',
         }}
       >
-        <Suspense fallback={<Stack>Loading...</Stack>}>
+        {/* <Suspense fallback={<Stack>Loading...</Stack>}> */}
           <Routes>
             <Route path="/4-3-1" element={<PageOne />} />
             <Route path="/4-3-2" element={<PageTwo />} />
@@ -42,7 +46,7 @@ const App: React.FC = () => (
             <Route path="/Glossary" element={<Glossary />} />
             <Route path="/Videos" element={<Videos />} />
           </Routes>
-        </Suspense>
+        {/* </Suspense> */}
       </Box>
     </Box>
   </CssVarsProvider>
