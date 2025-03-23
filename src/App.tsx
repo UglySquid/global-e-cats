@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { CssVarsProvider } from '@mui/joy/styles';
 import CssBaseline from '@mui/joy/CssBaseline';
@@ -10,7 +10,7 @@ import PageThree from './pages/PageThree';
 import Checklisting from './pages/Checklisting'
 import Questions from './pages/Questions.tsx'
 import Glossary from './pages/Glossary.tsx'
-import { Stack } from '@mui/joy';
+// import { Stack } from '@mui/joy';
 import Videos from './pages/Videos.tsx'
 
 // Lazy-loaded components
