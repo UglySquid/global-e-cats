@@ -1,6 +1,6 @@
 {
   "name": "diff_assignment",
-  "homepage": "https://uglysquid.github.io/global-economics-DA/build",
+  "homepage": "https://global-economics-da.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
