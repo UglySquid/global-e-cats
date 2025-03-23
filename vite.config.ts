@@ -20,7 +20,7 @@ export default defineConfig({
       },
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'other-libraries'], // Example of vendor chunk
+          vendor: ['react', 'react-dom'], // Example of vendor chunk
         },
       },
     }
