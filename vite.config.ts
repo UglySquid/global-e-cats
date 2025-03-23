@@ -13,10 +13,16 @@ export default defineConfig({
   build: {
     outDir,
     emptyOutDir: true,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),
-      }
+      },
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'other-libraries'], // Example of vendor chunk
+        },
+      },
     }
   }
 })
