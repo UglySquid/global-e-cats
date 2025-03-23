@@ -9,7 +9,7 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
   root,
   plugins: [reactRefresh()],
-  base: "/global-economics-DA/",
+  base: "./",
   build: {
     outDir,
     emptyOutDir: true,
