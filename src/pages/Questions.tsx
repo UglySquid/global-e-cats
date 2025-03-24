@@ -59,7 +59,7 @@ export default function Glossary() {
             <AccordionDetails>
               {section.article && (
                 <img
-                  src={`/assets/${section.article}`}
+                  src={`../assets/${section.article}`}
                   alt="Article"
                   style={{ width: '100%', marginTop: '1rem', borderRadius: '8px' }}
                 />
