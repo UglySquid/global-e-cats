@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import reactRefresh from '@vitejs/plugin-react-refresh'
+import react from '@vitejs/plugin-react'
 
 const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
@@ -8,8 +9,8 @@ const outDir = resolve(__dirname, 'dist')
 // https://vite.dev/config/
 export default defineConfig({
   root,
-  plugins: [reactRefresh()],
-  base: "./",
+  plugins: [react(), reactRefresh()],
+  base: "/",
   build: {
     outDir,
     emptyOutDir: true,

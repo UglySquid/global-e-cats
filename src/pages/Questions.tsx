@@ -59,7 +59,8 @@ export default function Glossary() {
             <AccordionDetails>
               {section.article && (
                 <img
-                  src={`../assets/${section.article}`}
+                  // src={`./assets/18N.2.SL.TZ0.1d_article.png`}
+                  src={`./assets/${section.article}`}
                   alt="Article"
                   style={{ width: '100%', marginTop: '1rem', borderRadius: '8px' }}
                 />
@@ -75,7 +76,7 @@ export default function Glossary() {
 
               {showAnswers[section.id] && section.answer && (
                 <img
-                  src={`/assets/${section.answer}`}
+                  src={`./assets/${section.answer}`}
                   alt="Answer"
                   style={{ width: '100%', marginTop: '1rem', borderRadius: '8px' }}
                 />
